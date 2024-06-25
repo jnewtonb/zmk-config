@@ -17,7 +17,11 @@ macros {
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
-                = <&kp S &kp &kp E &kp L &kp E &kp C &kp T &kp * &kp F &kp R &kp O &kp M>
+                = <&macro_tap &kp S &kp &kp E &kp L &kp E &kp C &kp T>
+                , <&macro_press &kp LSHIFT>
+                , <&macro_tap &kp NUM_8> 
+                , <&macro_release &kp LSHIFT>
+                , <&macro_tap &kp F &kp R &kp O &kp M>
                 ;
         };
     };
